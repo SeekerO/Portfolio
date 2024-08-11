@@ -2,7 +2,8 @@ import Header from "./frontend/layout/header/Header";
 import Footer from "./frontend/layout/footer/Footer";
 import Content from "./frontend/layout/content/Content";
 import CornerLottie from "../src/frontend/util/lottie/CornerLottie";
-import React, { useRef, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 function App() {
   const refHero = useRef(null);
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="bg-[#0C1618] w-auto h-auto">
+      <Analytics />
       <div className="absolute">
         <CornerLottie />
       </div>
