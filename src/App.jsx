@@ -23,11 +23,8 @@ function App() {
   const isInViewFooter = useInView(refFooter);
 
   return (
-    <div className="bg-[#] w-auto h-auto">
+    <div className="w-auto h-auto select-none">
       <Analytics />
-      <div className="absolute">
-        <CornerLottie />
-      </div>
 
       <header className="w-full flex">
         <Header
@@ -51,11 +48,6 @@ function App() {
       <footer ref={refFooter} className="flex w-full">
         <Footer />
       </footer>
-      <div className="w-full flex justify-end">
-        <div className="rotate-180">
-          <CornerLottie />
-        </div>
-      </div>
     </div>
   );
 }

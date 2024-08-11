@@ -60,7 +60,7 @@ const ParticlesComponent = (props) => {
           value: "# ",
         },
         links: {
-          color: "#FFFFFF",
+          color: "#FAF4D3",
           distance: 150,
           enable: true,
           opacity: 0.1,
@@ -83,7 +83,7 @@ const ParticlesComponent = (props) => {
           value: 150,
         },
         opacity: {
-          value: 1.0,
+          value: 0.1,
         },
         shape: {
           type: "circle",
@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
           value: { min: 1, max: 3 },
         },
       },
-      detectRetina: true,
+      detectRetina: false,
     }),
     []
   );
