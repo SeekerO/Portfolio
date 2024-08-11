@@ -5,13 +5,11 @@ import ProjectImageConfig from "../../../util/config/ProjectImageConfig";
 const Projects = () => {
   const [projectData, setProjectsData] = useState([]);
 
-
   useEffect(() => {
     const resposne = project_Data.projects;
     setProjectsData(resposne);
   }, []);
 
-  console.log(projectData);
   return (
     <div className="lg:px-40 px-10 mt-32 h-auto textColor">
       <h1 className="textColor mt-20 text-[25px] font-bold">PROJECTS</h1>

@@ -1,10 +1,16 @@
+//Pages
 import Header from "./frontend/layout/header/Header";
 import Footer from "./frontend/layout/footer/Footer";
 import Content from "./frontend/layout/content/Content";
-import CornerLottie from "../src/frontend/util/lottie/CornerLottie";
+//Lottie
+import CornerLottie from "../src/frontend/util/lottie/cornerAnimation/CornerLottie";
+//Vercel Analytics
 import { Analytics } from "@vercel/analytics/react";
+//Hooks
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
+import Particles from "./frontend/util/lottie/particles/Particles";
+
 function App() {
   const refHero = useRef(null);
   const refProjects = useRef(null);
@@ -22,6 +28,7 @@ function App() {
       <div className="absolute">
         <CornerLottie />
       </div>
+
       <header className="w-full flex">
         <Header
           isInViewHero={isInViewHero}
