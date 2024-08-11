@@ -10,8 +10,9 @@ import {
   foodsearchy,
   uptomovie,
 } from "../images/images";
+import { motion } from "framer-motion";
 import ModalProjects from "../components/modal/ModalProjects";
-const ProjectImageConfig = ({ project }) => {
+const ProjectImageConfig = ({ project, index }) => {
   const [openLink, setOpenLink] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const setImages = (imageName) => {
@@ -43,7 +44,22 @@ const ProjectImageConfig = ({ project }) => {
   return (
     <>
       {" "}
-      <div className="md:flex grid gap-10 items-center select-none">
+      <motion.div
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: index % 2 === 0 ? 50 : -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+        className="md:flex grid gap-10 items-center select-none"
+      >
         <div
           className="relative h-fit w-fit hover:scale-105 duration-300 group  cursor-pointer"
           onClick={() => openingAnimation()}
@@ -86,7 +102,7 @@ const ProjectImageConfig = ({ project }) => {
           </div>
           <p>{project.subtitle}</p>
         </div>
-      </div>
+      </motion.div>
       <ModalProjects
         openModal={openModal}
         setOpenModal={setOpenModal}

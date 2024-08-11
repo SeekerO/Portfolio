@@ -7,7 +7,10 @@ const Hero = () => {
   return (
     <div className={`h-screen w-full justify-center flex`} id="hero">
       <div className={`flex-col flex w-full items-center gap-5 justify-center`}>
-        <img
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.5 }}
           src={grad_pic}
           className="h-[250px] w-[250px] object-cover object-top  rounded-full bg-black border-[3px] border-[#FAF4D3]"
         />
@@ -15,15 +18,25 @@ const Hero = () => {
         <div
           className={`w-full md:mt-0 mt-10 flex flex-col textColor items-center `}
         >
-          <div className="flex md:text-[40px] text-[30px] pr-1 font-bold flex-wrap justify-center gap-x-1">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="flex md:text-[40px] text-[30px] pr-1 font-bold flex-wrap justify-center gap-x-1"
+          >
             Hello!
             <motion.span className="md:text-[40px] text-[30px] flex-shrink-0 pr-1">
               I'am John Albert Baisa
             </motion.span>
-          </div>
-          <div className="md:text-[25px] text-[20px]  tracking-widest text-center w-full">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="md:text-[25px] text-[20px]  tracking-widest text-center w-full"
+          >
             A Full-Stack Web Developer
-          </div>
+          </motion.div>
           <motion.div
             initial={{ width: "0px" }}
             animate={{ width: "300px" }}

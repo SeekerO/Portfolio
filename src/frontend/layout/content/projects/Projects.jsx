@@ -17,7 +17,7 @@ const Projects = () => {
         {projectData
           .sort((a, b) => (b.status === "Online") - (a.status === "Online"))
           .map((project, idx) => (
-            <ProjectImageConfig project={project} key={idx} />
+            <ProjectImageConfig project={project} key={idx} index={idx} />
           ))}
       </div>
     </div>

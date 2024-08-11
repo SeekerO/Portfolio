@@ -1,6 +1,6 @@
 import React from "react";
 import IconSorter from "./IconSorter";
-
+import { motion } from "framer-motion";
 const Tech = () => {
   const skills_meta_data = [
     { type: "JAVASCRIPT" },
@@ -25,11 +25,26 @@ const Tech = () => {
   ];
 
   return (
-    <div className="lg:px-40 px-10 mt-32 w-full justify-center items-start flex flex-col">
+    <motion.div
+      initial={{
+        opacity: 0,
+        // if odd index card,slide from right instead of left
+        x: -50,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0, // Slide in to its original position
+        transition: {
+          duration: 1, // Animation duration
+        },
+      }}
+      viewport={{ once: true }}
+      className="lg:px-40 px-10 mt-32 w-full justify-center items-start flex flex-col"
+    >
       <div className="textColor mt-20 text-[25px] font-bold">TECH-STACKS</div>
       <div className="skillsContainer">
         {skills_meta_data.map((meta_data, index) => (
-          <div
+          <motion.div
             key={index}
             className=" flex flex-col items-center group relative "
           >
@@ -39,10 +54,10 @@ const Tech = () => {
             <label className=" textColor font-semibold mt-1 flex justify-center flex-wrap text-clip">
               {meta_data.type}
             </label>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

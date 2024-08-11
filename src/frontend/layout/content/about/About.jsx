@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+const About = () => {
+  const [hasAnimated, setHasAnimated] = useState(false);
 
-const About = ({ ref }) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById("animated-div");
+      const rect = element.getBoundingClientRect();
+      const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+      if (inViewport && !hasAnimated) {
+        setHasAnimated(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check immediately on mount
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasAnimated]);
   return (
-    <div className="textColor text-[18px] flex flex-col w-full ">
+    <motion.div
+      id="animated-div"
+      initial={{ height: 0, opacity: 0 }}
+      animate={hasAnimated ? { height: "auto", opacity: 1 } : {}}
+      transition={{ duration: 2 }}
+      style={{ overflow: "hidden" }}
+      className="textColor text-[18px] flex flex-col w-full"
+    >
       <label className="font-semibold text-[25px]">ABOUT</label>
       <p className="pt-2 font-thin text-justify">
         Hello! My name is <strong className="font-semibold">John</strong>, but
@@ -23,7 +49,7 @@ const About = ({ ref }) => {
         success, and I'm also committed to lifetime learning and staying up to
         date with current market trends.
       </div>
-    </div>
+    </motion.div>
   );
 };
 
