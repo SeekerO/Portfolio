@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Main Color CSS */
+
+.maincolor {
+  @apply bg-[#0C1618];
+}
+
+.accentcolor {
+  @apply bg-[#004643];
+}
+
+.secondcolor {
+  @apply bg-[#FAF4D3];
+}
+
+/* Other CSS */
+.textColor {
+  @apply text-[#FAF4D3];
+}
+
+.buttonHeader {
+  @apply hover:cursor-pointer  tracking-widest;
+}
+
+.side-buttonHeader {
+  @apply text-[18px] font-semibold textColor cursor-pointer hover:p-3 hover:text-[20px] duration-300 mt-4 px-5;
+}
+
+.grid-container--fit {
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: #0c1618;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e373c;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0c1618;
+}
+
+.underline-offset {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.icon {
+  filter: drop-shadow(1px 1px 3px #363636);
+}
+
+.contacts-icon {
+  cursor: pointer;
+  transition: scale 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+
+  &:hover {
+    scale: 1;
+  }
+}
+
+.contacts-icon:has(.contacts-icon).contacts-icon:not(:hover) {
+  scale: 0.8;
+  opacity: 0.8;
+}
+
+.skillsContainer {
+  display: grid;
+  margin: 0 auto;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  width: 100%;
+}

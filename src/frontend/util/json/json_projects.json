@@ -1,0 +1,240 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "-V2 iMonitor (Web-App)",
+      "subtitle": "#TAILWINDCSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT #VITE",
+      "src": "iMonitor",
+      "href": "https://imonitor.site/",
+      "discrp": "A monitoring and management system with built in messaging system for OJT student in STI Santa Maria College",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Monitoring",
+          "disc": "Professor can see the progress of each individual student and in the same time the personal infromation that is needed."
+        },
+        {
+          "id": "f2",
+          "title": "File Management",
+          "disc": "Student can upload file in the announcement where in the professor will receive it in it's end."
+        },
+        {
+          "id": "f3",
+          "title": "Real-Time Messaging System",
+          "disc": "Student and Professor can communicate through the system will real-time messagin."
+        },
+        {
+          "id": "f4",
+          "title": "Attendance System",
+          "disc": "The student can time in and time out that will be sent to end of the professor."
+        },
+        {
+          "id": "f5",
+          "title": "3 User Level",
+          "disc": "iMonitor has a 3 user level Professor, Admin and Student."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "-Send-Here (Web-App)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT #SUPABASE",
+      "src": "Send_here",
+      "href": "https://seekero.github.io/Send_Here/",
+      "discrp": "A mock up Messenger",
+      "status": "Offline Database",
+      "allowToOpenSite": false,
+      "feature": [
+        { "id": "f1", "title": "Mock Up Messenger", "disc": "" },
+        { "id": "f2", "title": "", "disc": "" },
+        { "id": "f3", "title": "", "disc": "" },
+        { "id": "f4", "title": "", "disc": "" },
+        { "id": "f5", "title": "", "disc": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "-SEEKERDEV (Website)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT",
+      "src": "Seekerdev",
+      "href": "#",
+      "discrp": "My personal portoflio where it shows my previous projects",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Home",
+          "disc": "Where you can see me resume and me :)"
+        },
+        {
+          "id": "f2",
+          "title": "Projects",
+          "disc": "Projects that I made in my free time and in my intern"
+        },
+        {
+          "id": "f3",
+          "title": "About",
+          "disc": "Short discription of who I'am"
+        },
+        {
+          "id": "f4",
+          "title": "Contacts",
+          "disc": "Contact information of mine"
+        },
+        { "id": "f5", "title": "", "disc": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "-UptoMovie (Website)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT #VITE #TMDB_API",
+      "src": "uptomovie",
+      "href": "https://uptomovie.vercel.app",
+      "discrp": "A movie and trailers information fetch in TMDB api.",
+      "status": "Under Development",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Home",
+          "disc": "Landing page where it shows different movies categorizing it to popular, upcoming, and top rated."
+        },
+        {
+          "id": "f2",
+          "title": "Movies",
+          "disc": "Shows different movies and its discription and trailers"
+        },
+        {
+          "id": "f3",
+          "title": "Tv Shows",
+          "disc": "Shows different tv shows and its discription and trailers"
+        },
+        {
+          "id": "f4",
+          "title": "People",
+          "disc": "User can search different actor inside the database and there previous films."
+        },
+        {
+          "id": "f5",
+          "title": "Search bar",
+          "disc": "User can search movies and tvshows "
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "-Akira Moving System (Website)",
+      "subtitle": "#WORDPRESS #PHP #CSS",
+      "src": "Akira",
+      "href": "https://akiramovingsystems.com/",
+      "discrp": "A showcase website for Akira Moving System",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Showcase",
+          "disc": "showcase of different product of akira moving system."
+        },
+        { "id": "f2", "title": "", "disc": "" },
+        { "id": "f3", "title": "", "disc": "" },
+        { "id": "f4", "title": "", "disc": "" },
+        { "id": "f5", "title": "", "disc": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "-TODO (Web-App)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT #VITE #LOCALSTORAGE",
+      "src": "Todo",
+      "href": "https://to-do-list-ten-theta.vercel.app/",
+      "discrp": "To-Do and Scheduler Application",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Upcoming",
+          "disc": "Show all the list of the user made and upcoming note"
+        },
+        {
+          "id": "f2",
+          "title": "Today",
+          "disc": "Loads user todo list in a list of time today"
+        },
+        {
+          "id": "f3",
+          "title": "Calendar",
+          "disc": "Create a Note to a specific date in the calendar"
+        },
+        {
+          "id": "f4",
+          "title": "Sticky Wall",
+          "disc": "Create user sticky wall of all the user notes"
+        },
+        {
+          "id": "f5",
+          "title": "List",
+          "disc": "Create multiple todo in one list"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "-TrackITpos (Web-App)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT  #VITE #FIREBASE",
+      "src": "trackit",
+      "href": "https://track-it-pos.vercel.app",
+      "discrp": "A mini POS system using firebase",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Dashboard",
+          "disc": "Dashboard conssit of item creation and item manipulation."
+        },
+        {
+          "id": "f2",
+          "title": "Shop",
+          "disc": "Shop consist of items and check out method."
+        },
+        {
+          "id": "f3",
+          "title": "Recent",
+          "disc": "A calculation of total sales in Today, Monthly, and Overall Total "
+        },
+        { "id": "f4", "title": "", "disc": "" },
+        { "id": "f5", "title": "", "disc": "" }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "-FoodSearchy (Website)",
+      "subtitle": "#TAILWIND CSS #CSS #HTML #JAVASCRIPT #NODE.JS #REACT #VITE #API",
+      "src": "foodsearchy",
+      "href": "https://foodsearch-khaki.vercel.app",
+      "discrp": "A simple webiste food recipe searcher using API in theMealDB.",
+      "status": "Online",
+      "allowToOpenSite": true,
+      "feature": [
+        {
+          "id": "f1",
+          "title": "Categories",
+          "disc": "Displays the food in a categorize format"
+        },
+        {
+          "id": "f2",
+          "title": "Search by country",
+          "disc": "Displays the specific food in a specfiic country"
+        },
+        { "id": "f3", "title": "Your Menu", "disc": "User's saved recipe" },
+        { "id": "f4", "title": "", "disc": "" },
+        { "id": "f5", "title": "", "disc": "" }
+      ]
+    }
+  ]
+}
