@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 //Hooks
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
-import Particles from "./frontend/util/lottie/particles/Particles";
+import ParticlesComponent from "./frontend/util/lottie/particles/ParticlesComponent";
 
 function App() {
   const refHero = useRef(null);
@@ -23,7 +23,7 @@ function App() {
   const isInViewFooter = useInView(refFooter);
 
   return (
-    <div className="bg-[#0C1618] w-auto h-auto">
+    <div className="bg-[#] w-auto h-auto">
       <Analytics />
       <div className="absolute">
         <CornerLottie />
@@ -38,12 +38,15 @@ function App() {
         />
       </header>
 
-      <div className="w-full flex flex-col selection:overflow-hidden">
+      <div className="w-full flex flex-col overflow-hidden relative">
         <Content
           refHero={refHero}
           refProjects={refProjects}
           refAbout={refAbout}
         />
+        <div className="absolute">
+          <ParticlesComponent id="particles" />
+        </div>
       </div>
       <footer ref={refFooter} className="flex w-full">
         <Footer />
