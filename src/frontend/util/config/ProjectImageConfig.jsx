@@ -33,7 +33,11 @@ const ProjectImageConfig = ({ project }) => {
     setOpenLink(!openLink);
     setTimeout(() => {
       setOpenLink(false);
-      window.open(project.href);
+      if (window.innerWidth > 768) {
+        window.open(project.href, "_blank");
+      } else {
+        window.open(project.href, "_top");
+      }
     }, 1600);
   };
   return (
@@ -64,7 +68,9 @@ const ProjectImageConfig = ({ project }) => {
             className="text-[30px] md:flex grid items-center font-bold  cursor-pointer"
             onClick={() => setOpenModal(!openModal)}
           >
-            <h1 className="md:flex hidden">{project.title}</h1>
+            <h1 className="md:flex hidden hover:underline hover:underline-offset-4">
+              {project.title}
+            </h1>
             <em
               className={`${
                 project.status === "Online"
@@ -74,7 +80,9 @@ const ProjectImageConfig = ({ project }) => {
             >
               {project.status}
             </em>
-            <h1 className="md:hidden flex">{project.title}</h1>
+            <h1 className="md:hidden flex hover:underline  hover:underline-offset-4">
+              {project.title}
+            </h1>
           </div>
           <p>{project.subtitle}</p>
         </div>

@@ -56,9 +56,8 @@ const ModalProjects = ({ openModal, setOpenModal, projectData }) => {
             : { width: "0%", height: "0px" }
         }
         transition={{
-          duration: 0.5,
-          width: { duration: 1 },
-          height: { delay: 1, duration: 0.5 },
+          width: { duration: 0.5 },
+          height: { delay: 0.5, duration: 0.5 },
         }}
         className=" h-[10px] textColor bg-[#1f2b2e] overflow-hidden backdrop-blur-sm overflow-y-auto rounded-md"
       >
@@ -85,7 +84,8 @@ const ModalProjects = ({ openModal, setOpenModal, projectData }) => {
                       className="grid grid-cols-2 border-[1px] rounded-md py-1 px-1.5 bg-slate-800"
                     >
                       <label className="flex items-center gap-1 font-semibold shrink-0">
-                        <IoIosSettings className="text-[30px]" /> {feature.title}
+                        <IoIosSettings className="text-[30px]" />{" "}
+                        {feature.title}
                       </label>
                       <p className="font-thin">{feature.disc}</p>
                     </div>

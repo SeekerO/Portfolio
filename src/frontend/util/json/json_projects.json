@@ -94,7 +94,7 @@
       "src": "uptomovie",
       "href": "https://uptomovie.vercel.app",
       "discrp": "A movie and trailers information fetch in TMDB api.",
-      "status": "Under Development",
+      "status": "Online",
       "allowToOpenSite": true,
       "feature": [
         {
