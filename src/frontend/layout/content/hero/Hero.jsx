@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
-import GradPic from "../../../util/images/Grad_pic.jpg";
+import { grad_pic } from "../../../util/images/images";
 
 const Hero = () => {
   return (
     <div className={`h-screen w-full justify-center flex`} id="hero">
       <div className={`flex-col flex w-full items-center gap-5 justify-center`}>
         <img
-          src={GradPic}
+          src={grad_pic}
           className="h-[250px] w-[250px] object-cover object-top  rounded-full bg-black border-[3px] border-[#FAF4D3]"
         />
 
