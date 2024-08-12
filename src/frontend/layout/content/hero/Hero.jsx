@@ -47,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 3 }}
-            href="https://drive.google.com/file/d/1rXdAFXxokYbFMY70BnpisWOnxC8cjnGG/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1wk_rYKSArHhH4U70uYZpmshf5aiIEN6c/view?usp=drivesdk"
             download
             className="w-fit flex items-center gap-2 px-5  py-2 rounded-md font-semibold bg-[#FAF4D3] text-[#0C1618] mt-5 
             cursor-pointer duration-300 hover:translate-y-1"
