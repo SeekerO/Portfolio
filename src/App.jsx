@@ -6,6 +6,7 @@ import Content from "./frontend/layout/content/Content";
 import CornerLottie from "../src/frontend/util/lottie/cornerAnimation/CornerLottie";
 //Vercel Analytics
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 //Hooks
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="w-auto h-auto select-none">
       <Analytics />
+      <SpeedInsights />
 
       <header className="w-full flex">
         <Header
